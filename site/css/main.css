@@ -1,0 +1,105 @@
+:root {
+    --page-width: 60em;
+    --background-colour: #efefef;
+    --background-darker-colour: #e0e0e0;
+    --foreground-colour: #2b2b2b;
+    --foreground-muted-colour: #8b8b8b;
+    --foreground-light-colour: #8b8b8b;
+    --purple-highlight-colour: #41398e;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-colour);
+    color: var(--foreground-colour);
+    font-family: Poppins, sans-serif;
+    margin: 0 auto;
+    padding-left: 10px;
+    width: var(--page-width);
+}
+
+nav {
+    color: var(--foreground-muted-colour);
+}
+
+h1:not(:hover) {
+    opacity: 0.1;
+}
+
+h1 {
+    transition: opacity 0.5s;
+}
+
+h1 {
+    color: var(--foreground-muted-colour);
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+a {
+    color: var(--foreground-colour);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--foreground-light-colour);
+    text-decoration-thickness: .1rem;
+}
+
+a:hover {
+    color: var(--purple-highlight-colour);
+}
+
+code {
+    tab-size: 4;
+}
+
+.breadcrumb {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-bottom: 3em;
+    margin-top: -1em;
+    padding-inline-start: 0;
+}
+
+.footer {
+    color: var(--foreground-light-colour);
+    margin-top: 3em;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.subTitle {
+    margin-top: 0;
+}
+
+.page-index-container {
+    margin: 0;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+}
+
+.page-index-item {
+    background-color: var(--background-darker-colour);
+    border-left-width: 0;
+    border-radius: 7px;
+    list-style-type: none;
+    padding: 1em 0.5em;
+    margin: 1em 0 1em;
+}
+
+.page-index-info {
+    color: var(--foreground-light-colour);
+    margin: 0.25em 0 0 1em;
+}
