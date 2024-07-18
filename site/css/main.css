@@ -1,11 +1,29 @@
 :root {
-    --page-width: 60em;
-    --background-colour: #efefef;
-    --background-darker-colour: #e0e0e0;
-    --foreground-colour: #2b2b2b;
-    --foreground-muted-colour: #8b8b8b;
-    --foreground-light-colour: #8b8b8b;
-    --purple-highlight-colour: #41398e;
+    --page-width: 40em;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-colour: #2b2b2b;
+        --background-darker-colour: #4b4b4b;
+        --foreground-colour: #efefef;
+        --foreground-muted-colour: #8b8b8b;
+        --foreground-light-colour: #8b8b8b;
+        --purple-highlight-colour: #8984bc;
+        --purple-colour: #41398e;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-colour: #efefef;
+        --background-darker-colour: #e0e0e0;
+        --foreground-colour: #2b2b2b;
+        --foreground-muted-colour: #8b8b8b;
+        --foreground-light-colour: #8b8b8b;
+        --purple-highlight-colour: #41398e;
+        --purple-colour: #8984bc;
+    }
 }
 
 body {
@@ -15,12 +33,8 @@ body {
     color: var(--foreground-colour);
     font-family: Poppins, sans-serif;
     margin: 0 auto;
-    padding-left: 10px;
+    padding-left: 0.5em;
     width: var(--page-width);
-}
-
-nav {
-    color: var(--foreground-muted-colour);
 }
 
 h1:not(:hover) {
@@ -40,8 +54,8 @@ h1 {
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-weight: bold;
     unicode-bidi: isolate;
 }
@@ -51,7 +65,7 @@ a {
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--foreground-light-colour);
-    text-decoration-thickness: .1rem;
+    text-decoration-thickness: 0.1rem;
 }
 
 a:hover {
@@ -60,6 +74,10 @@ a:hover {
 
 code {
     tab-size: 4;
+}
+
+nav a {
+    color: var(--purple-colour);
 }
 
 .breadcrumb {
@@ -93,9 +111,9 @@ code {
 .page-index-item {
     background-color: var(--background-darker-colour);
     border-left-width: 0;
-    border-radius: 7px;
+    border-radius: 4px;
     list-style-type: none;
-    padding: 1em 0.5em;
+    padding: 1em 1.5em;
     margin: 1em 0 1em;
 }
 
